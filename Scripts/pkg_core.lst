@@ -74,6 +74,10 @@ ark                                                    # kde file archiver
 code                                                   # ide text editor
 nwg-displays                                           # monitor management utility
 fzf                                                    # Command-line fuzzy finder
+steam                                                  # games
+discord                                                # game chat
+obs                                                    # screen recorder
+vlc                                                    # media player
 
 # --------------------------------------------------- // Shell
 starship|zsh                                           # customizable shell prompt written in Rust
