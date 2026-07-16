@@ -10,7 +10,7 @@ blueman                                     # Bluetooth GUI manager
 udiskie                                     # Automatic removable media mounting
 brightnessctl                               # Display brightness control
 playerctl                                   # Media player controller (MPRIS)
-
+partitionmanager                            # Graphical disk partitioning utility
 # ==============================================================================
 # AUDIO PIPELINE (PIPEWIRE)
 # ==============================================================================
@@ -96,7 +96,6 @@ kitty                                       # GPU-accelerated terminal emulator
 vim                                         # Console text editor
 fzf                                         # Command-line fuzzy finder
 fastfetch                                   # System information display tool
-htop                                        # Interactive process viewer & system monitor
 btop                                        # Modern, resource-rich TUI system monitor
 
 # ==============================================================================
