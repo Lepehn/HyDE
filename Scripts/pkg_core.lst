@@ -11,6 +11,8 @@ udiskie                                     # Automatic removable media mounting
 brightnessctl                               # Display brightness control
 playerctl                                   # Media player controller (MPRIS)
 partitionmanager                            # Graphical disk partitioning utility
+ntfs-3g                                     # Read/Write support for Windows NTFS drives
+
 # ==============================================================================
 # AUDIO PIPELINE (PIPEWIRE)
 # ==============================================================================
