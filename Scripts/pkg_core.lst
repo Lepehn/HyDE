@@ -68,6 +68,7 @@ pacman-contrib                              # Arch package maintenance scripts
 parallel                                    # Shell execution parallelism tool
 jq                                          # Command-line JSON processor
 imagemagick                                 # Image manipulation tool set
+
 # ==============================================================================
 # THEMING & QT/GTK INTEGRATION
 # ==============================================================================
@@ -79,6 +80,7 @@ kvantum-qt5                                 # SVG-based theme engine (Qt5)
 qt5-wayland                                 # Wayland platform plugin for Qt5
 qt6-wayland                                 # Wayland platform plugin for Qt6
 noto-fonts-emoji                            # Color emoji support
+
 # ==============================================================================
 # SHELL & PROMPT
 # ==============================================================================
@@ -94,6 +96,8 @@ kitty                                       # GPU-accelerated terminal emulator
 vim                                         # Console text editor
 fzf                                         # Command-line fuzzy finder
 fastfetch                                   # System information display tool
+htop                                        # Interactive process viewer & system monitor
+btop                                        # Modern, resource-rich TUI system monitor
 
 # ==============================================================================
 # CORE WORKSPACE & MEDIA APPLICATIONS
