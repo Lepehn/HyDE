@@ -1,1 +1,7 @@
 /* User custom styles */
+* {
+    border: none;
+    border-radius: 0;
+    font-size: 18px;
+    min-height: 0;
+}
