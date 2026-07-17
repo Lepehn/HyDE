@@ -107,8 +107,7 @@ chromium                                    # Primary Web Browser
 obs-studio                                  # Video Recording & Live Streaming
 steam                                       # Gaming Platform
 discord                                     # Communication Client
-vlc                                         # Feature-complete media player
-vlc-plugins-all                             # Extra audio/video codecs for VLC
+mpv                                         # Feature-complete media player
 code                                        # Visual Studio Code (Open Source build)
 dolphin                                     # File manager
 qt5-imageformats                            # Image thumbnails for Dolphin
