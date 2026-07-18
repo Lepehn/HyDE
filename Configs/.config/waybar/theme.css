@@ -1,9 +1,9 @@
-@define-color bar-bg rgba(0, 0, 0, 0); /* Very dark green, fully transparent */
+@define-color bar-bg rgba(0, 0, 0, 0); /* fully transparent */
 
-@define-color main-bg rgba(0, 0, 0, 1); /* Very dark green, 80% opacity */
-@define-color main-fg rgba(255,255,255,0.8); /* Light green, 80% opacity */
+@define-color main-bg rgba(9, 9, 9, 1); /* Dark Charcoal Gray */
+@define-color main-fg rgba(212, 162, 127, 1); /* Warm Desat Tan */
 
-@define-color wb-act-bg rgba(17,180,180,0.6); /* Light blue, 40% opacity */
+@define-color wb-act-bg rgba(212, 162, 127, 0.8); /* Warm Desat Tan, 80% opacity */
 @define-color wb-act-fg rgba(204,255,255,1); /* Light blue, full opacity */
 
 @define-color wb-hvr-bg rgba(75,125,125,0.2); /* Muted blue-green, 40% opacity */
