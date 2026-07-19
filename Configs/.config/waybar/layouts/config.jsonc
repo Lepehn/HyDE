@@ -11,6 +11,48 @@
         "$XDG_CONFIG_HOME/waybar/modules/*json*", 
         "$XDG_CONFIG_HOME/waybar/includes/includes.json" 
     ],
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-bluetooth": "{icon} {volume}%",
+        "format-muted": " ",
+        "format-icons": {
+            "alsa_output.pci-0000_00_1f.3.analog-stereo": " ",
+            "alsa_output.pci-0000_00_1f.3.analog-stereo-muted": " ",
+            "headphone": " ",
+            "hands-free": "󰂑 ",
+            "headset": "󰂑 ",
+            "phone": " ",
+            "phone-muted": "" ,
+            "portable": " ",
+            "car": " ",
+            "default": [" ", " " ]
+        },
+        "scroll-step": 1,
+        "on-click": "pavucontrol"
+    },
+    "pulseaudio#microphone": {
+        "format": "{format_source} {source_volume}%",
+        "rotate": 0,
+        "format-source": "\uf86b",
+        "format-source-muted": "\uf131",
+        "on-click": "pavucontrol-qt -t 4 || pavucontrol -t 4",
+        "on-click-middle": "hyde-shell volumecontrol -i m",
+        "on-scroll-up": "hyde-shell volumecontrol -i i",
+        "on-scroll-down": "hyde-shell volumecontrol -i d",
+        "tooltip-format": "{format_source} {source_desc} // {source_volume}%",
+        "scroll-step": 5
+    },
+    "network": {
+        "interval": 60,
+        "interface-ethernet": "enp1s*",
+        "interface-wifi": "wlp2s0",
+        "format-ethernet": "Wired 󰈀",
+        "format-wifi": "{essid} ({signalStrength}%) ",
+        "tooltip-format-ethernet": "{ifname}: {ipaddr}/{cidr} 󰈀",
+        "tooltip-format-wifi": "{ifname}: {ipaddr}/{cidr} ",
+        "format-linked": "(No IP) 󰀝",
+        "format-disconnected": "Disconnected ⚠"
+    },
     "modules-left": [
         "group/pill#left"
     ],
@@ -21,37 +63,61 @@
         ]
     },
     "modules-center": [
-        "group/pill#center"
+        "group/pill#center1",
+        "group/pill#center2"
     ],
-    "group/pill#center": {
+    "group/pill#center1": {
         "orientation": "inherit",
         "modules": [
-            "custom/app-launcher",
+            "custom/app-launcher"
+        ]
+    },
+    "group/pill#center2": {
+        "orientation": "inherit",
+        "modules": [
             "wlr/taskbar",
             "mpris"
         ]
     },
     "modules-right": [
         "group/pill#right1",
-        "group/pill#right2"
+        "group/pill#right2",
+        "group/pill#right3",
+        "group/pill#right4",
+        "group/pill#right5"
     ],
     "group/pill#right1": {
         "orientation": "inherit",
         "modules": [
-            "backlight",
-            "tray",
-            "pulseaudio",
-            "pulseaudio#microphone",
-            "privacy",
-            "battery"
+            "tray"
         ]
     },
     "group/pill#right2": {
         "orientation": "inherit",
         "modules": [
+            "backlight",
+            "pulseaudio",
+            "pulseaudio#microphone",
+            "battery"
+        ]
+    },
+    "group/pill#right3": {
+        "orientation": "inherit",
+        "modules": [
+            "network"
+        ]
+    },
+    "group/pill#right4": {
+        "orientation": "inherit",
+        "modules": [
             "idle_inhibitor",
             "clock",
-            "custom/power",
+            "custom/power"
+        ]
+    },
+    "group/pill#right5": {
+        "orientation": "inherit",
+        "modules": [
             "custom/dunst"
         ]
     }
