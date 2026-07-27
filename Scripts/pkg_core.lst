@@ -12,6 +12,7 @@ brightnessctl                               # Display brightness control
 playerctl                                   # Media player controller (MPRIS)
 partitionmanager                            # Graphical disk partitioning utility
 ntfs-3g                                     # Read/Write support for Windows NTFS drives
+ntfsprogs                                   # Read/Write support for Windows NTFS drives
 
 # ==============================================================================
 # AUDIO PIPELINE (PIPEWIRE)
@@ -25,6 +26,8 @@ pipewire-jack                               # JACK compatibility plugin
 gst-plugin-pipewire                         # GStreamer PipeWire plugin
 pavucontrol                                 # PulseAudio/PipeWire GUI volume control
 pamixer                                     # Command-line volume control
+lsp-plugins-ladspa                          # Voice Effects
+noise-suppression-for-voice                 # Voice Effects
 
 # ==============================================================================
 # DISPLAY MANAGER & LOGIN
@@ -95,7 +98,7 @@ hyprquery                                   # Hyprland configuration query tool
 # TERMINAL & CLI UTILITIES
 # ==============================================================================
 kitty                                       # GPU-accelerated terminal emulator
-vim                                         # Console text editor
+nano                                        # Console text editor (replaced vim)
 fzf                                         # Command-line fuzzy finder
 fastfetch                                   # System information display tool
 btop                                        # Modern, resource-rich TUI system monitor
@@ -108,9 +111,11 @@ obs-studio                                  # Video Recording & Live Streaming
 steam                                       # Gaming Platform
 discord                                     # Communication Client
 mpv                                         # Feature-complete media player
-code                                        # Visual Studio Code (Open Source build)
+code                                       # Visual Studio Code (Open Source build)
 dolphin                                     # File manager
 qt5-imageformats                            # Image thumbnails for Dolphin
 ffmpegthumbs                                # Video thumbnails for Dolphin
 kde-cli-tools                               # File association defaults for Dolphin
 ark                                         # Graphical archive manager
+jellyfin-server                             # Jellyfin media service
+jellyfin-web                                # Jellyfin media service
